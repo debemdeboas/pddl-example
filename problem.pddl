@@ -15,6 +15,7 @@
         (Local Refrigerantes ArmazemSantosDummont)
         (Local A1 SantosDummont)
     )
+    ; Eu te amo, obrigada por me ensinar git.
     (:goal
         (Local Refrigerantes ArmazemSalgadoFilho)
     )

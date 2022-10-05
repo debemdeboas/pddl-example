@@ -9,7 +9,7 @@
         (Armazem ?obj)
     )
 
-    (:action voar ; original
+    (:action voar
         :parameters (?obj ?loc1 ?loc2)
         :precondition (and (Aviao ?obj) (Local ?obj ?loc1) (Aeroporto ?loc1) (Aeroporto ?loc2))
         :effect (and (Local ?obj ?loc2) (not (Local ?obj ?loc1)))
