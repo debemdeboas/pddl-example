@@ -8,18 +8,6 @@
         (Armazem ?obj)
     )
 
-    (:action voar ; original
-        :parameters (?obj ?loc1 ?loc2)
-        :precondition (and (Aviao ?obj) (Local ?obj ?loc1) (Aeroporto ?loc1) (Aeroporto ?loc2))
-        :effect (and (Local ?obj ?loc2) (not (Local ?obj ?loc1)))
-    )
-
-    (:action carregar ; original
-        :parameters (?obj ?loc1 ?loc2)
-        :precondition (and (Carga ?obj) (Local ?obj ?loc1) (Aeroporto ?loc1) (Aviao ?loc2) (Local ?loc2 ?loc1))
-        :effect (and (Local ?obj ?loc2) (not (Local ?obj ?loc1)))
-    )
-
     (:action descarregar ; original
         :parameters (?obj ?loc1 ?loc2)
         :precondition (and (Carga ?obj) (Local ?obj ?loc1) (Aeroporto ?loc2) (Aviao ?loc1) (Local ?loc1 ?loc2))
