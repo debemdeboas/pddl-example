@@ -1,4 +1,5 @@
 ﻿(define (domain transporte)
+    ; Atividade avaliativa extra - Inteligência Artificial
     (:requirements :strips)
     (:predicates
         (Aviao ?obj)
